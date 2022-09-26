@@ -63,8 +63,8 @@ $(document).ready(function() {
     scrollBar: true,
     responsiveWidth: 400,
     navigation: true,
-    navigationTooltips: ['home', 'summary', 'work', 'education', 'skills', 'interest', 'contact'],
-    anchors: ['home', 'summary', 'work', 'education', 'skills', 'interest', 'contact'],
+    navigationTooltips: ['home', 'summary', 'work', 'education', 'awards', 'skills', 'interest', 'contact'],
+    anchors: ['home', 'summary', 'work', 'education', 'awards', 'skills', 'interest', 'contact'],
     menu: '#myMenu',
     fitToSection: false,
 
@@ -117,6 +117,10 @@ $(document).ready(function() {
   });
 
   $(document).on('click', '#work', function(){
+    $.fn.fullpage.moveTo(3);
+  });
+
+  $(document).on('click', '#awards', function(){
     $.fn.fullpage.moveTo(3);
   });
 
